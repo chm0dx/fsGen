@@ -8,6 +8,7 @@ if(len(sys.argv) == 4):
         size = int(sys.argv[3])
         mode = "fixed"
 
+
 dirs = []
 dirs.append(base)
 dirCount = 0
