@@ -47,21 +47,27 @@ def makeFile(int,parent):
         f.close()
 
 if(mode == "random"):
-        for i in range(1,count+1):
+	i = 1
+	while i < count+1:
+        #for i in range(1,count+1):
                 print i
                 parent = random.choice(dirs)
                 if (Roll() == "dir"):
                         makeDir(i,parent)
                 else:
                         makeFileR(i,parent)
+		i+=1
 
 else:
-        for i in range(1,count+1):
+	i = 1
+	while i < count+1:
+        #for i in range(1,count+1):
                 print i
                 parent = random.choice(dirs)
                 if (Roll() == "dir"):
                         makeDir(i,parent)
                 else:
                         makeFile(i,parent)
+		i+=1
 
 print str(fileCount) + " Files\r\n" + str(dirCount) + " Directories"
