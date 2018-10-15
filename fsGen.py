@@ -7,6 +7,8 @@ count = int(sys.argv[2])
 if(len(sys.argv) == 4):
         size = int(sys.argv[3])
         mode = "fixed"
+else:
+	mode = "random"
 
 
 dirs = []
